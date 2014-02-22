@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <opencv2/highgui/cap_ios.h>
 
 @interface VideoViewController : UIViewController
+
+{
+    IBOutlet UIButton *start;
+    IBOutlet UIImageView *imageView;
+}
+
+- (IBAction)startButton;
 
 @end

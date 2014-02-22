@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3745"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Setup-->
+        <!--View Controller - Connect-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -20,39 +20,74 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qut-Ji-DAB"/>
-                                    <barButtonItem title="Start" id="5b9-yV-cOV">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3Ux-I2-Bs8"/>
+                                    <barButtonItem title="Start" id="AYF-o0-0dv">
                                         <connections>
-                                            <action selector="startButton" destination="vXZ-lx-hvc" id="AyG-6e-dep"/>
-                                            <segue destination="PQV-FT-2PZ" kind="push" id="gsF-KR-OiT"/>
+                                            <action selector="startButton" destination="vXZ-lx-hvc" id="CTo-05-zCr"/>
+                                            <segue destination="AFI-Ib-jQF" kind="push" id="OxR-Ey-LvA"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3Ux-I2-Bs8"/>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPX-rj-h9e">
-                                <rect key="frame" x="53" y="177" width="214" height="214"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBn-oE-mjI">
+                                <rect key="frame" x="51" y="232" width="218" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="qrCode">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="qrCodeButton" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wCY-mQ-MBm"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Setup" id="0ce-iR-ISq"/>
+                    <navigationItem key="navigationItem" title="Connect" id="0ce-iR-ISq"/>
                     <connections>
-                        <outlet property="qrCode" destination="hPX-rj-h9e" id="JEM-hJ-DJF"/>
-                        <outlet property="start" destination="5b9-yV-cOV" id="D57-WF-smK"/>
-                        <outlet property="toolbar" destination="WBr-9K-2D7" id="bmM-Tt-4ez"/>
+                        <outlet property="passwordLabel" destination="HBn-oE-mjI" id="qGZ-o0-0XS"/>
+                        <outlet property="start" destination="AYF-o0-0dv" id="taH-Fi-kdS"/>
+                        <outlet property="toolbar" destination="WBr-9K-2D7" id="6vK-H3-aMu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="814" y="131"/>
+        </scene>
+        <!--Calibration View Controller - Calibration-->
+        <scene sceneID="j88-L6-g3u">
+            <objects>
+                <viewController id="AFI-Ib-jQF" customClass="CalibrationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hTs-bU-HJQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z0X-LS-Us1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Zp-M1-fE3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFl-kp-O6B">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4pa-rJ-7WP"/>
+                                    <barButtonItem title="Ready" id="udj-Gq-OWe">
+                                        <connections>
+                                            <action selector="readyButton" destination="AFI-Ib-jQF" id="9Uf-gM-oSY"/>
+                                            <segue destination="PQV-FT-2PZ" kind="push" id="Ga2-HK-mbx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Wqw-yF-fP2"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calibration" id="f5A-Rz-22X"/>
+                    <connections>
+                        <outlet property="ready" destination="udj-Gq-OWe" id="bC1-3f-0TO"/>
+                        <outlet property="toolbar" destination="bFl-kp-O6B" id="UMM-cU-JRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6b-RK-B65" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="131"/>
         </scene>
         <!--Video View Controller - Video-->
         <scene sceneID="4Zw-2Z-v5d">
@@ -66,19 +101,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FU9-lu-yzk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgA-rw-vVa">
+                                <rect key="frame" x="59" y="155" width="203" height="258"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17g-PY-lOG">
+                                <rect key="frame" x="144" y="443" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton" destination="PQV-FT-2PZ" eventType="touchUpInside" id="otl-Ix-aaz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Video" id="ei1-AR-feQ"/>
+                    <connections>
+                        <outlet property="imageView" destination="mgA-rw-vVa" id="iBO-wP-KL3"/>
+                        <outlet property="start" destination="17g-PY-lOG" id="qsz-bl-AC5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZ3-Sp-BlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="131"/>
+            <point key="canvasLocation" x="1584" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IOl-cY-Z4B">
@@ -99,9 +147,6 @@
             <point key="canvasLocation" x="350" y="131"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="qrCode" width="200" height="200"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

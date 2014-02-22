@@ -7,12 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNetworking.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     return YES;
 }
 							
@@ -41,6 +41,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    NSDictionary *parameters = @{@"accessToken": accessToken};
+//    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+//    [manager.requestSerializer setValue:@"content-type" forHTTPHeaderField:@"application/json"];
+//    [manager POST:@"http://meetjiro.appspot.com/api/login/mobile" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject)
+//     {
+//         NSLog(@"JSON: %@", responseObject);
+//     }
+//          failure:^(AFHTTPRequestOperation *operation, NSError *error)
+//     {
+//         NSLog(@"Error: %@", error);
+//     }];
 }
 
 @end

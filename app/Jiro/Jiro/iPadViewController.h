@@ -11,13 +11,12 @@
 @interface iPadViewController : UIViewController
 
 {
-    IBOutlet UIButton *qrCode;
+    IBOutlet UILabel *passwordLabel;
     
     IBOutlet UIBarButtonItem *start;
     IBOutlet UIToolbar *toolbar;
 }
 
 - (IBAction)startButton;
-- (IBAction)qrCodeButton;
 
 @end

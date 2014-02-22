@@ -7,11 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D49ABEED18B910900085156C /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ABEE618B910900085156C /* TPKeyboardAvoidingCollectionView.m */; };
+		D49ABEEE18B910900085156C /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ABEE818B910900085156C /* TPKeyboardAvoidingScrollView.m */; };
+		D49ABEEF18B910900085156C /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ABEEA18B910900085156C /* TPKeyboardAvoidingTableView.m */; };
+		D49ABEF018B910900085156C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ABEEC18B910900085156C /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		D49ABEF318B912940085156C /* iPadCalibrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ABEF218B912940085156C /* iPadCalibrationViewController.m */; };
+		D49ABEF618B9129C0085156C /* CalibrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ABEF518B9129C0085156C /* CalibrationViewController.m */; };
+		D49ADE9B18B919CD0085156C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADE9A18B919CD0085156C /* Accelerate.framework */; };
+		D49ADE9D18B919EC0085156C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADE9C18B919EC0085156C /* AssetsLibrary.framework */; };
+		D49ADE9F18B919FE0085156C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADE9E18B919FE0085156C /* CoreImage.framework */; };
+		D49ADEA518B91AC50085156C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADEA318B91A8F0085156C /* opencv2.framework */; };
+		D49ADEC218B92CE10085156C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEB018B92CE10085156C /* AFHTTPRequestOperation.m */; };
+		D49ADEC318B92CE10085156C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEB218B92CE10085156C /* AFHTTPRequestOperationManager.m */; };
+		D49ADEC418B92CE10085156C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEB418B92CE10085156C /* AFHTTPSessionManager.m */; };
+		D49ADEC518B92CE10085156C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEB718B92CE10085156C /* AFNetworkReachabilityManager.m */; };
+		D49ADEC618B92CE10085156C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEB918B92CE10085156C /* AFSecurityPolicy.m */; };
+		D49ADEC718B92CE10085156C /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEBB18B92CE10085156C /* AFURLConnectionOperation.m */; };
+		D49ADEC818B92CE10085156C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEBD18B92CE10085156C /* AFURLRequestSerialization.m */; };
+		D49ADEC918B92CE10085156C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEBF18B92CE10085156C /* AFURLResponseSerialization.m */; };
+		D49ADECA18B92CE10085156C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEC118B92CE10085156C /* AFURLSessionManager.m */; };
 		D4A9331718B8FDE700D79915 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9331618B8FDE700D79915 /* Foundation.framework */; };
 		D4A9331918B8FDE700D79915 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9331818B8FDE700D79915 /* CoreGraphics.framework */; };
 		D4A9331B18B8FDE700D79915 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9331A18B8FDE700D79915 /* UIKit.framework */; };
 		D4A9332118B8FDE700D79915 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4A9331F18B8FDE700D79915 /* InfoPlist.strings */; };
-		D4A9332318B8FDE700D79915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9332218B8FDE700D79915 /* main.m */; };
+		D4A9332318B8FDE700D79915 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4A9332218B8FDE700D79915 /* main.mm */; };
 		D4A9332718B8FDE700D79915 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9332618B8FDE700D79915 /* AppDelegate.m */; };
 		D4A9332A18B8FDE700D79915 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A9332818B8FDE700D79915 /* Main_iPhone.storyboard */; };
 		D4A9332D18B8FDE700D79915 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A9332B18B8FDE700D79915 /* Main_iPad.storyboard */; };
@@ -43,13 +62,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D49ABEE518B910900085156C /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		D49ABEE618B910900085156C /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		D49ABEE718B910900085156C /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		D49ABEE818B910900085156C /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		D49ABEE918B910900085156C /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		D49ABEEA18B910900085156C /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		D49ABEEB18B910900085156C /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		D49ABEEC18B910900085156C /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		D49ABEF118B912940085156C /* iPadCalibrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadCalibrationViewController.h; sourceTree = "<group>"; };
+		D49ABEF218B912940085156C /* iPadCalibrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadCalibrationViewController.m; sourceTree = "<group>"; };
+		D49ABEF418B9129C0085156C /* CalibrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationViewController.h; sourceTree = "<group>"; };
+		D49ABEF518B9129C0085156C /* CalibrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalibrationViewController.m; sourceTree = "<group>"; };
+		D49ADE9A18B919CD0085156C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D49ADE9C18B919EC0085156C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D49ADE9E18B919FE0085156C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D49ADEA318B91A8F0085156C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = opencv2.framework; path = Jiro/APIs/OpenCV/opencv2.framework; sourceTree = "<group>"; };
+		D49ADEAF18B92CE10085156C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		D49ADEB018B92CE10085156C /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		D49ADEB118B92CE10085156C /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		D49ADEB218B92CE10085156C /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		D49ADEB318B92CE10085156C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		D49ADEB418B92CE10085156C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		D49ADEB518B92CE10085156C /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		D49ADEB618B92CE10085156C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		D49ADEB718B92CE10085156C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		D49ADEB818B92CE10085156C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		D49ADEB918B92CE10085156C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		D49ADEBA18B92CE10085156C /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		D49ADEBB18B92CE10085156C /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		D49ADEBC18B92CE10085156C /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		D49ADEBD18B92CE10085156C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		D49ADEBE18B92CE10085156C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		D49ADEBF18B92CE10085156C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		D49ADEC018B92CE10085156C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		D49ADEC118B92CE10085156C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		D4A9331318B8FDE700D79915 /* Jiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A9331618B8FDE700D79915 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4A9331818B8FDE700D79915 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D4A9331A18B8FDE700D79915 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D4A9331E18B8FDE700D79915 /* Jiro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jiro-Info.plist"; sourceTree = "<group>"; };
 		D4A9332018B8FDE700D79915 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D4A9332218B8FDE700D79915 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4A9332218B8FDE700D79915 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		D4A9332418B8FDE700D79915 /* Jiro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jiro-Prefix.pch"; sourceTree = "<group>"; };
 		D4A9332518B8FDE700D79915 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4A9332618B8FDE700D79915 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +136,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49ADEA518B91AC50085156C /* opencv2.framework in Frameworks */,
+				D49ADE9F18B919FE0085156C /* CoreImage.framework in Frameworks */,
+				D49ADE9D18B919EC0085156C /* AssetsLibrary.framework in Frameworks */,
+				D49ADE9B18B919CD0085156C /* Accelerate.framework in Frameworks */,
 				D4A9338718B9073200D79915 /* CoreAudio.framework in Frameworks */,
 				D4A9338518B9072D00D79915 /* QuartzCore.framework in Frameworks */,
 				D4A9338318B9072100D79915 /* CoreVideo.framework in Frameworks */,
@@ -106,6 +164,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D49ABEE418B910900085156C /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				D49ABEE518B910900085156C /* TPKeyboardAvoidingCollectionView.h */,
+				D49ABEE618B910900085156C /* TPKeyboardAvoidingCollectionView.m */,
+				D49ABEE718B910900085156C /* TPKeyboardAvoidingScrollView.h */,
+				D49ABEE818B910900085156C /* TPKeyboardAvoidingScrollView.m */,
+				D49ABEE918B910900085156C /* TPKeyboardAvoidingTableView.h */,
+				D49ABEEA18B910900085156C /* TPKeyboardAvoidingTableView.m */,
+				D49ABEEB18B910900085156C /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				D49ABEEC18B910900085156C /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKeyboardAvoiding;
+			path = APIs/TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		D49ADEAE18B92CE10085156C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				D49ADEAF18B92CE10085156C /* AFHTTPRequestOperation.h */,
+				D49ADEB018B92CE10085156C /* AFHTTPRequestOperation.m */,
+				D49ADEB118B92CE10085156C /* AFHTTPRequestOperationManager.h */,
+				D49ADEB218B92CE10085156C /* AFHTTPRequestOperationManager.m */,
+				D49ADEB318B92CE10085156C /* AFHTTPSessionManager.h */,
+				D49ADEB418B92CE10085156C /* AFHTTPSessionManager.m */,
+				D49ADEB518B92CE10085156C /* AFNetworking.h */,
+				D49ADEB618B92CE10085156C /* AFNetworkReachabilityManager.h */,
+				D49ADEB718B92CE10085156C /* AFNetworkReachabilityManager.m */,
+				D49ADEB818B92CE10085156C /* AFSecurityPolicy.h */,
+				D49ADEB918B92CE10085156C /* AFSecurityPolicy.m */,
+				D49ADEBA18B92CE10085156C /* AFURLConnectionOperation.h */,
+				D49ADEBB18B92CE10085156C /* AFURLConnectionOperation.m */,
+				D49ADEBC18B92CE10085156C /* AFURLRequestSerialization.h */,
+				D49ADEBD18B92CE10085156C /* AFURLRequestSerialization.m */,
+				D49ADEBE18B92CE10085156C /* AFURLResponseSerialization.h */,
+				D49ADEBF18B92CE10085156C /* AFURLResponseSerialization.m */,
+				D49ADEC018B92CE10085156C /* AFURLSessionManager.h */,
+				D49ADEC118B92CE10085156C /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = APIs/AFNetworking;
+			sourceTree = "<group>";
+		};
 		D4A9330A18B8FDE700D79915 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +229,10 @@
 		D4A9331518B8FDE700D79915 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D49ADEA318B91A8F0085156C /* opencv2.framework */,
+				D49ADE9E18B919FE0085156C /* CoreImage.framework */,
+				D49ADE9C18B919EC0085156C /* AssetsLibrary.framework */,
+				D49ADE9A18B919CD0085156C /* Accelerate.framework */,
 				D4A9338A18B9074C00D79915 /* libiconv.dylib */,
 				D4A9338618B9073200D79915 /* CoreAudio.framework */,
 				D4A9338418B9072D00D79915 /* QuartzCore.framework */,
@@ -154,6 +259,10 @@
 				D4A9335518B900F600D79915 /* ViewController.m */,
 				D4A9335118B900EC00D79915 /* iPadViewController.h */,
 				D4A9335218B900EC00D79915 /* iPadViewController.m */,
+				D49ABEF418B9129C0085156C /* CalibrationViewController.h */,
+				D49ABEF518B9129C0085156C /* CalibrationViewController.m */,
+				D49ABEF118B912940085156C /* iPadCalibrationViewController.h */,
+				D49ABEF218B912940085156C /* iPadCalibrationViewController.m */,
 				D4A9334E18B900D000D79915 /* VideoViewController.h */,
 				D4A9334F18B900D000D79915 /* VideoViewController.m */,
 				D4A9335718B9010300D79915 /* iPadVideoViewController.h */,
@@ -169,7 +278,7 @@
 			children = (
 				D4A9331E18B8FDE700D79915 /* Jiro-Info.plist */,
 				D4A9331F18B8FDE700D79915 /* InfoPlist.strings */,
-				D4A9332218B8FDE700D79915 /* main.m */,
+				D4A9332218B8FDE700D79915 /* main.mm */,
 				D4A9332418B8FDE700D79915 /* Jiro-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -196,6 +305,8 @@
 		D4A9335A18B906A300D79915 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				D49ADEAE18B92CE10085156C /* AFNetworking */,
+				D49ABEE418B910900085156C /* TPKeyboardAvoiding */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -301,12 +412,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49ADEC218B92CE10085156C /* AFHTTPRequestOperation.m in Sources */,
 				D4A9335918B9010300D79915 /* iPadVideoViewController.m in Sources */,
+				D49ABEEE18B910900085156C /* TPKeyboardAvoidingScrollView.m in Sources */,
+				D49ADECA18B92CE10085156C /* AFURLSessionManager.m in Sources */,
+				D49ABEF318B912940085156C /* iPadCalibrationViewController.m in Sources */,
+				D49ADEC718B92CE10085156C /* AFURLConnectionOperation.m in Sources */,
+				D49ADEC318B92CE10085156C /* AFHTTPRequestOperationManager.m in Sources */,
 				D4A9335318B900EC00D79915 /* iPadViewController.m in Sources */,
+				D49ADEC518B92CE10085156C /* AFNetworkReachabilityManager.m in Sources */,
+				D49ABEEF18B910900085156C /* TPKeyboardAvoidingTableView.m in Sources */,
 				D4A9332718B8FDE700D79915 /* AppDelegate.m in Sources */,
+				D49ADEC618B92CE10085156C /* AFSecurityPolicy.m in Sources */,
 				D4A9335018B900D000D79915 /* VideoViewController.m in Sources */,
-				D4A9332318B8FDE700D79915 /* main.m in Sources */,
+				D49ADEC818B92CE10085156C /* AFURLRequestSerialization.m in Sources */,
+				D4A9332318B8FDE700D79915 /* main.mm in Sources */,
+				D49ADEC918B92CE10085156C /* AFURLResponseSerialization.m in Sources */,
 				D4A9335618B900F600D79915 /* ViewController.m in Sources */,
+				D49ABEF618B9129C0085156C /* CalibrationViewController.m in Sources */,
+				D49ADEC418B92CE10085156C /* AFHTTPSessionManager.m in Sources */,
+				D49ABEED18B910900085156C /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				D49ABEF018B910900085156C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,17 +567,18 @@
 		D4A9334918B8FDE700D79915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Jiro/APIs/OpenCV",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jiro/Jiro-Prefix.pch";
 				INFOPLIST_FILE = "Jiro/Jiro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/jamesharnett/Documents/Github/Jiro/app/Jiro/Jiro/APIs/ZBarSDK,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,17 +587,18 @@
 		D4A9334A18B8FDE700D79915 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Jiro/APIs/OpenCV",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jiro/Jiro-Prefix.pch";
 				INFOPLIST_FILE = "Jiro/Jiro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/jamesharnett/Documents/Github/Jiro/app/Jiro/Jiro/APIs/ZBarSDK,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -537,6 +665,7 @@
 				D4A9334A18B8FDE700D79915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4A9334B18B8FDE700D79915 /* Build configuration list for PBXNativeTarget "JiroTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +674,7 @@
 				D4A9334D18B8FDE700D79915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3745"/>
     </dependencies>
     <scenes>
-        <!--I Pad View Controller - Setup-->
+        <!--I Pad View Controller - Connect-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="iPadViewController" sceneMemberID="viewController">
@@ -20,38 +20,74 @@
                                 <rect key="frame" x="0.0" y="980" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ymf-Mc-VYG"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="z0J-48-BAM"/>
                                     <barButtonItem title="Start" id="7pb-hP-K9U">
                                         <connections>
-                                            <action selector="startButton" destination="BYZ-38-t0r" id="iQh-Go-4JV"/>
-                                            <segue destination="QCI-vA-lOD" kind="push" id="bij-74-Krg"/>
+                                            <action selector="startButton" destination="BYZ-38-t0r" id="3qa-qy-S91"/>
+                                            <segue destination="HeP-Ml-ZoY" kind="push" id="Ela-Jm-VxP"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18j-sx-Woa">
-                                <rect key="frame" x="249" y="383" width="270" height="258"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emI-1H-hI7">
+                                <rect key="frame" x="212" y="446" width="344" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="qrCode">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="qrCodeButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fk-hA-prc"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="123"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Setup" id="HHI-YM-Gur"/>
+                    <navigationItem key="navigationItem" title="Connect" id="HHI-YM-Gur"/>
                     <connections>
-                        <outlet property="qrCode" destination="18j-sx-Woa" id="Bmp-FD-L8S"/>
-                        <outlet property="start" destination="7pb-hP-K9U" id="4QM-qG-JBx"/>
+                        <outlet property="passwordLabel" destination="emI-1H-hI7" id="H9A-uv-bxq"/>
+                        <outlet property="start" destination="7pb-hP-K9U" id="xqx-41-4cf"/>
                         <outlet property="toolbar" destination="sSc-LN-vgr" id="dKh-2u-sne"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="874" y="1025"/>
+        </scene>
+        <!--I Pad Calibration View Controller - Calibration-->
+        <scene sceneID="46e-Ii-iyj">
+            <objects>
+                <viewController id="HeP-Ml-ZoY" customClass="iPadCalibrationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wzg-Hd-7pi"/>
+                        <viewControllerLayoutGuide type="bottom" id="whk-Ma-DNx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9gW-jv-ac7">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1d-dj-ZqI">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1uV-bu-8OI"/>
+                                    <barButtonItem title="Ready" id="nzk-bg-2QJ">
+                                        <connections>
+                                            <action selector="readyButton" destination="HeP-Ml-ZoY" id="oer-MR-ODn"/>
+                                            <segue destination="QCI-vA-lOD" kind="push" id="F1I-fL-0h6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="K9C-1S-Aa5"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calibration" id="a8C-d5-6fX"/>
+                    <connections>
+                        <outlet property="ready" destination="nzk-bg-2QJ" id="X1j-Bv-OPS"/>
+                        <outlet property="toolbar" destination="L1d-dj-ZqI" id="JqM-fm-09Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSE-XQ-o38" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="1025"/>
         </scene>
         <!--I Pad Video View Controller - Video-->
         <scene sceneID="bjl-Mb-dhP">
@@ -70,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15S-cg-KD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1733" y="1025"/>
+            <point key="canvasLocation" x="2573" y="1025"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YSd-5Y-DVq">
@@ -91,9 +127,6 @@
             <point key="canvasLocation" x="-68" y="1025"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="qrCode" width="200" height="200"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>
