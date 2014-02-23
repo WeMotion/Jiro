@@ -16,7 +16,6 @@
 		D49ADE9B18B919CD0085156C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADE9A18B919CD0085156C /* Accelerate.framework */; };
 		D49ADE9D18B919EC0085156C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADE9C18B919EC0085156C /* AssetsLibrary.framework */; };
 		D49ADE9F18B919FE0085156C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADE9E18B919FE0085156C /* CoreImage.framework */; };
-		D49ADEA518B91AC50085156C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADEA318B91A8F0085156C /* opencv2.framework */; };
 		D49ADEC218B92CE10085156C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEB018B92CE10085156C /* AFHTTPRequestOperation.m */; };
 		D49ADEC318B92CE10085156C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEB218B92CE10085156C /* AFHTTPRequestOperationManager.m */; };
 		D49ADEC418B92CE10085156C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEB418B92CE10085156C /* AFHTTPSessionManager.m */; };
@@ -26,6 +25,10 @@
 		D49ADEC818B92CE10085156C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEBD18B92CE10085156C /* AFURLRequestSerialization.m */; };
 		D49ADEC918B92CE10085156C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEBF18B92CE10085156C /* AFURLResponseSerialization.m */; };
 		D49ADECA18B92CE10085156C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D49ADEC118B92CE10085156C /* AFURLSessionManager.m */; };
+		D49ADED018B951200085156C /* 1256617233-1-haarcascade_hand.xml in Resources */ = {isa = PBXBuildFile; fileRef = D49ADECD18B951200085156C /* 1256617233-1-haarcascade_hand.xml */; };
+		D49ADED118B951200085156C /* 1256617233-2-haarcascade-hand.xml in Resources */ = {isa = PBXBuildFile; fileRef = D49ADECE18B951200085156C /* 1256617233-2-haarcascade-hand.xml */; };
+		D49ADED818B95B6E0085156C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADED718B95B6D0085156C /* opencv2.framework */; };
+		D49ADEDA18B97D330085156C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49ADED918B97D330085156C /* CoreMotion.framework */; };
 		D4A9331718B8FDE700D79915 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9331618B8FDE700D79915 /* Foundation.framework */; };
 		D4A9331918B8FDE700D79915 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9331818B8FDE700D79915 /* CoreGraphics.framework */; };
 		D4A9331B18B8FDE700D79915 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9331A18B8FDE700D79915 /* UIKit.framework */; };
@@ -40,10 +43,10 @@
 		D4A9333B18B8FDE700D79915 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9331A18B8FDE700D79915 /* UIKit.framework */; };
 		D4A9334318B8FDE700D79915 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4A9334118B8FDE700D79915 /* InfoPlist.strings */; };
 		D4A9334518B8FDE700D79915 /* JiroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9334418B8FDE700D79915 /* JiroTests.m */; };
-		D4A9335018B900D000D79915 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9334F18B900D000D79915 /* VideoViewController.m */; };
+		D4A9335018B900D000D79915 /* VideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4A9334F18B900D000D79915 /* VideoViewController.mm */; };
 		D4A9335318B900EC00D79915 /* iPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9335218B900EC00D79915 /* iPadViewController.m */; };
 		D4A9335618B900F600D79915 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9335518B900F600D79915 /* ViewController.m */; };
-		D4A9335918B9010300D79915 /* iPadVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9335818B9010300D79915 /* iPadVideoViewController.m */; };
+		D4A9335918B9010300D79915 /* iPadVideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4A9335818B9010300D79915 /* iPadVideoViewController.mm */; };
 		D4A9337F18B9070D00D79915 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9337E18B9070D00D79915 /* AVFoundation.framework */; };
 		D4A9338118B9071B00D79915 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9338018B9071B00D79915 /* CoreMedia.framework */; };
 		D4A9338318B9072100D79915 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A9338218B9072100D79915 /* CoreVideo.framework */; };
@@ -77,7 +80,6 @@
 		D49ADE9A18B919CD0085156C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		D49ADE9C18B919EC0085156C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D49ADE9E18B919FE0085156C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		D49ADEA318B91A8F0085156C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = opencv2.framework; path = Jiro/APIs/OpenCV/opencv2.framework; sourceTree = "<group>"; };
 		D49ADEAF18B92CE10085156C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		D49ADEB018B92CE10085156C /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		D49ADEB118B92CE10085156C /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -97,6 +99,10 @@
 		D49ADEBF18B92CE10085156C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		D49ADEC018B92CE10085156C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		D49ADEC118B92CE10085156C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		D49ADECD18B951200085156C /* 1256617233-1-haarcascade_hand.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "1256617233-1-haarcascade_hand.xml"; path = "APIs/OpenCV/Cascades/1256617233-1-haarcascade_hand.xml"; sourceTree = "<group>"; };
+		D49ADECE18B951200085156C /* 1256617233-2-haarcascade-hand.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "1256617233-2-haarcascade-hand.xml"; path = "APIs/OpenCV/Cascades/1256617233-2-haarcascade-hand.xml"; sourceTree = "<group>"; };
+		D49ADED718B95B6D0085156C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = Jiro/APIs/OpenCV/opencv2.framework; sourceTree = "<group>"; };
+		D49ADED918B97D330085156C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D4A9331318B8FDE700D79915 /* Jiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A9331618B8FDE700D79915 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4A9331818B8FDE700D79915 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,13 +122,13 @@
 		D4A9334218B8FDE700D79915 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4A9334418B8FDE700D79915 /* JiroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiroTests.m; sourceTree = "<group>"; };
 		D4A9334E18B900D000D79915 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		D4A9334F18B900D000D79915 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		D4A9334F18B900D000D79915 /* VideoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoViewController.mm; sourceTree = "<group>"; };
 		D4A9335118B900EC00D79915 /* iPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadViewController.h; sourceTree = "<group>"; };
 		D4A9335218B900EC00D79915 /* iPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadViewController.m; sourceTree = "<group>"; };
 		D4A9335418B900F600D79915 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D4A9335518B900F600D79915 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D4A9335718B9010300D79915 /* iPadVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadVideoViewController.h; sourceTree = "<group>"; };
-		D4A9335818B9010300D79915 /* iPadVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadVideoViewController.m; sourceTree = "<group>"; };
+		D4A9335818B9010300D79915 /* iPadVideoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iPadVideoViewController.mm; sourceTree = "<group>"; };
 		D4A9337E18B9070D00D79915 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D4A9338018B9071B00D79915 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D4A9338218B9072100D79915 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -136,13 +142,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49ADEA518B91AC50085156C /* opencv2.framework in Frameworks */,
+				D49ADEDA18B97D330085156C /* CoreMotion.framework in Frameworks */,
 				D49ADE9F18B919FE0085156C /* CoreImage.framework in Frameworks */,
 				D49ADE9D18B919EC0085156C /* AssetsLibrary.framework in Frameworks */,
 				D49ADE9B18B919CD0085156C /* Accelerate.framework in Frameworks */,
 				D4A9338718B9073200D79915 /* CoreAudio.framework in Frameworks */,
 				D4A9338518B9072D00D79915 /* QuartzCore.framework in Frameworks */,
 				D4A9338318B9072100D79915 /* CoreVideo.framework in Frameworks */,
+				D49ADED818B95B6E0085156C /* opencv2.framework in Frameworks */,
 				D4A9338118B9071B00D79915 /* CoreMedia.framework in Frameworks */,
 				D4A9337F18B9070D00D79915 /* AVFoundation.framework in Frameworks */,
 				D4A9331918B8FDE700D79915 /* CoreGraphics.framework in Frameworks */,
@@ -207,6 +214,23 @@
 			path = APIs/AFNetworking;
 			sourceTree = "<group>";
 		};
+		D49ADECB18B946C10085156C /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				D49ADECC18B950550085156C /* Cascades */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		D49ADECC18B950550085156C /* Cascades */ = {
+			isa = PBXGroup;
+			children = (
+				D49ADECD18B951200085156C /* 1256617233-1-haarcascade_hand.xml */,
+				D49ADECE18B951200085156C /* 1256617233-2-haarcascade-hand.xml */,
+			);
+			name = Cascades;
+			sourceTree = "<group>";
+		};
 		D4A9330A18B8FDE700D79915 = {
 			isa = PBXGroup;
 			children = (
@@ -229,7 +253,8 @@
 		D4A9331518B8FDE700D79915 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D49ADEA318B91A8F0085156C /* opencv2.framework */,
+				D49ADED918B97D330085156C /* CoreMotion.framework */,
+				D49ADED718B95B6D0085156C /* opencv2.framework */,
 				D49ADE9E18B919FE0085156C /* CoreImage.framework */,
 				D49ADE9C18B919EC0085156C /* AssetsLibrary.framework */,
 				D49ADE9A18B919CD0085156C /* Accelerate.framework */,
@@ -264,9 +289,9 @@
 				D49ABEF118B912940085156C /* iPadCalibrationViewController.h */,
 				D49ABEF218B912940085156C /* iPadCalibrationViewController.m */,
 				D4A9334E18B900D000D79915 /* VideoViewController.h */,
-				D4A9334F18B900D000D79915 /* VideoViewController.m */,
+				D4A9334F18B900D000D79915 /* VideoViewController.mm */,
 				D4A9335718B9010300D79915 /* iPadVideoViewController.h */,
-				D4A9335818B9010300D79915 /* iPadVideoViewController.m */,
+				D4A9335818B9010300D79915 /* iPadVideoViewController.mm */,
 				D4A9333118B8FDE700D79915 /* Images.xcassets */,
 				D4A9331D18B8FDE700D79915 /* Supporting Files */,
 			);
@@ -305,6 +330,7 @@
 		D4A9335A18B906A300D79915 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				D49ADECB18B946C10085156C /* OpenCV */,
 				D49ADEAE18B92CE10085156C /* AFNetworking */,
 				D49ABEE418B910900085156C /* TPKeyboardAvoiding */,
 			);
@@ -390,6 +416,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49ADED118B951200085156C /* 1256617233-2-haarcascade-hand.xml in Resources */,
+				D49ADED018B951200085156C /* 1256617233-1-haarcascade_hand.xml in Resources */,
 				D4A9332D18B8FDE700D79915 /* Main_iPad.storyboard in Resources */,
 				D4A9333218B8FDE700D79915 /* Images.xcassets in Resources */,
 				D4A9332A18B8FDE700D79915 /* Main_iPhone.storyboard in Resources */,
@@ -413,7 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D49ADEC218B92CE10085156C /* AFHTTPRequestOperation.m in Sources */,
-				D4A9335918B9010300D79915 /* iPadVideoViewController.m in Sources */,
+				D4A9335918B9010300D79915 /* iPadVideoViewController.mm in Sources */,
 				D49ABEEE18B910900085156C /* TPKeyboardAvoidingScrollView.m in Sources */,
 				D49ADECA18B92CE10085156C /* AFURLSessionManager.m in Sources */,
 				D49ABEF318B912940085156C /* iPadCalibrationViewController.m in Sources */,
@@ -424,7 +452,7 @@
 				D49ABEEF18B910900085156C /* TPKeyboardAvoidingTableView.m in Sources */,
 				D4A9332718B8FDE700D79915 /* AppDelegate.m in Sources */,
 				D49ADEC618B92CE10085156C /* AFSecurityPolicy.m in Sources */,
-				D4A9335018B900D000D79915 /* VideoViewController.m in Sources */,
+				D4A9335018B900D000D79915 /* VideoViewController.mm in Sources */,
 				D49ADEC818B92CE10085156C /* AFURLRequestSerialization.m in Sources */,
 				D4A9332318B8FDE700D79915 /* main.mm in Sources */,
 				D49ADEC918B92CE10085156C /* AFURLResponseSerialization.m in Sources */,
@@ -571,15 +599,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Jiro/APIs/OpenCV",
+					/Users/jamesharnett/Documents/Github/Jiro/app/Jiro/Jiro/APIs/OpenCV,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jiro/Jiro-Prefix.pch";
 				INFOPLIST_FILE = "Jiro/Jiro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -591,15 +622,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Jiro/APIs/OpenCV",
+					/Users/jamesharnett/Documents/Github/Jiro/app/Jiro/Jiro/APIs/OpenCV,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jiro/Jiro-Prefix.pch";
 				INFOPLIST_FILE = "Jiro/Jiro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

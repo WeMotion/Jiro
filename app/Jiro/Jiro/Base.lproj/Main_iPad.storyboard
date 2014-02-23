@@ -24,7 +24,7 @@
                                     <barButtonItem title="Start" id="7pb-hP-K9U">
                                         <connections>
                                             <action selector="startButton" destination="BYZ-38-t0r" id="3qa-qy-S91"/>
-                                            <segue destination="HeP-Ml-ZoY" kind="push" id="Ela-Jm-VxP"/>
+                                            <segue destination="QCI-vA-lOD" kind="push" id="kQt-cc-7rf"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -50,46 +50,7 @@
             </objects>
             <point key="canvasLocation" x="874" y="1025"/>
         </scene>
-        <!--I Pad Calibration View Controller - Calibration-->
-        <scene sceneID="46e-Ii-iyj">
-            <objects>
-                <viewController id="HeP-Ml-ZoY" customClass="iPadCalibrationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wzg-Hd-7pi"/>
-                        <viewControllerLayoutGuide type="bottom" id="whk-Ma-DNx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9gW-jv-ac7">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1d-dj-ZqI">
-                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1uV-bu-8OI"/>
-                                    <barButtonItem title="Ready" id="nzk-bg-2QJ">
-                                        <connections>
-                                            <action selector="readyButton" destination="HeP-Ml-ZoY" id="oer-MR-ODn"/>
-                                            <segue destination="QCI-vA-lOD" kind="push" id="F1I-fL-0h6"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="K9C-1S-Aa5"/>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Calibration" id="a8C-d5-6fX"/>
-                    <connections>
-                        <outlet property="ready" destination="nzk-bg-2QJ" id="X1j-Bv-OPS"/>
-                        <outlet property="toolbar" destination="L1d-dj-ZqI" id="JqM-fm-09Z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kSE-XQ-o38" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1727" y="1025"/>
-        </scene>
-        <!--I Pad Video View Controller - Video-->
+        <!--I Pad Video View Controller - Connected-->
         <scene sceneID="bjl-Mb-dhP">
             <objects>
                 <viewController id="QCI-vA-lOD" customClass="iPadVideoViewController" sceneMemberID="viewController">
@@ -100,13 +61,39 @@
                     <view key="view" contentMode="scaleToFill" id="G2A-TG-hZL">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X Coordinate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9t-Z9-AAb">
+                                <rect key="frame" x="259" y="472" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Y Coordinate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTd-dd-8sl">
+                                <rect key="frame" x="259" y="501" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Z Coordinate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BE-uf-Kri">
+                                <rect key="frame" x="259" y="530" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Video" id="eaD-aN-A5g"/>
+                    <navigationItem key="navigationItem" title="Connected" id="eaD-aN-A5g"/>
+                    <connections>
+                        <outlet property="xCoordinateLabel" destination="j9t-Z9-AAb" id="X2v-r6-v5o"/>
+                        <outlet property="yCoordinateLabel" destination="jTd-dd-8sl" id="yO0-Uq-4oQ"/>
+                        <outlet property="zCoordinateLabel" destination="3BE-uf-Kri" id="2zk-cy-ESx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15S-cg-KD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2573" y="1025"/>
+            <point key="canvasLocation" x="1765" y="1025"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YSd-5Y-DVq">

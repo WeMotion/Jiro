@@ -8,11 +8,59 @@
 
 #import "AppDelegate.h"
 #import "AFNetworking.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    int pin1 = arc4random() % 10;
+    int pin2 = arc4random() % 10;
+    int pin3 = arc4random() % 10;
+    int pin4 = arc4random() % 10;
+    
+    NSString *pin = [NSString stringWithFormat:@"%d%d%d%d", pin1 , pin2, pin3, pin4];
+    self.pinCode = pin;
+    
+    NSString *deviceName = [[UIDevice currentDevice] name];
+    NSString *modelName = [[UIDevice currentDevice] model];
+    
+    NSLog(@"name: %@", deviceName);
+    NSLog(@"model: %@", modelName);
+    
+    if ([deviceName rangeOfString:@"’s iPhone"].location == NSNotFound)
+    {
+        NSLog(@"string does not contain iPhone");
+    }
+    else
+    {
+        NSLog(@"string contains iPhone!");
+        
+        // ADD IN FUNCTIONALITY TO REDUCE SIZE OF deviceName STRING
+    }
+    
+    NSLog(@"name: %@", deviceName);
+    NSLog(@"model: %@", modelName);
+    
+    // send JSON package w/ deviceName && modelName && pin
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSDictionary *parameters = @{@"name": deviceName, @"model": modelName, @"pin": pin};
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    [manager.requestSerializer setValue:@"Content-Type" forHTTPHeaderField:@"application/json"];
+    [manager POST:@"http://meetjiro.appspot.com/api/login/mobile" parameters:parameters
+     
+          success:^(AFHTTPRequestOperation *operation, id responseObject)
+     {
+         NSLog(@"%@", responseObject[@"identifier"]);
+         self.identifierCode = responseObject[@"identifier"];
+     }
+     
+          failure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
+         NSLog(@"Error: %@", error);
+     }];
+    
     return YES;
 }
 							
@@ -26,6 +74,23 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSDictionary *parameters = @{@"identifier": delegate.identifierCode};
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    [manager.requestSerializer setValue:@"Content-Type" forHTTPHeaderField:@"application/json"];
+    [manager POST:@"http://meetjiro.appspot.com/api/login/mobile" parameters:parameters
+     
+          success:^(AFHTTPRequestOperation *operation, id responseObject)
+     {
+         NSLog(@"hi");
+     }
+     
+          failure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
+         NSLog(@"Error: %@", error);
+     }];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -40,20 +105,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    
-//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-//    NSDictionary *parameters = @{@"accessToken": accessToken};
-//    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-//    [manager.requestSerializer setValue:@"content-type" forHTTPHeaderField:@"application/json"];
-//    [manager POST:@"http://meetjiro.appspot.com/api/login/mobile" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject)
-//     {
-//         NSLog(@"JSON: %@", responseObject);
-//     }
-//          failure:^(AFHTTPRequestOperation *operation, NSError *error)
-//     {
-//         NSLog(@"Error: %@", error);
-//     }];
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground.
 }
 
 @end

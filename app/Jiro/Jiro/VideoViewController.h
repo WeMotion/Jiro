@@ -8,14 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import <opencv2/highgui/cap_ios.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface VideoViewController : UIViewController
 
 {
-    IBOutlet UIButton *start;
-    IBOutlet UIImageView *imageView;
+    IBOutlet UILabel *xCoordinateLabel;
+    IBOutlet UILabel *yCoordinateLabel;
+    IBOutlet UILabel *zCoordinateLabel;
+    
+    NSTimer *missionCompleteTimer;
+    int missionCompleteCount;
 }
 
-- (IBAction)startButton;
+@property (strong, nonatomic) CMMotionManager *motionManager;
+@property (assign, nonatomic) double xCoordinate;
+@property (assign, nonatomic) double yCoordinate;
+@property (assign, nonatomic) double zCoordinate;
 
 @end
